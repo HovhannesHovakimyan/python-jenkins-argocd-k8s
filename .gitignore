@@ -1,3 +1,36 @@
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+*.tfvars
+.terraform.lock.hcl
+
+# Ignore sensitive or machine-specific information
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Ignore CLI-specific files
+.terraform-version
+.terraform.lock.hcl
+
+# Ignore log files
+terraform.log
+
+# Ignore provider plugin binaries
+terraform-provider-*
+
+# Ignore crash log files
+crash.log
+
+# Ignore any generated files
+*_generated.go
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
