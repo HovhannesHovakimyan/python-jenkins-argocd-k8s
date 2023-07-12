@@ -1,6 +1,6 @@
 # Create a security group
 resource "aws_security_group" "ec2_jenkins" {
-  vpc_id = aws_vpc.example_vpc.id
+  vpc_id = aws_vpc.main.id
   tags = {
     Purpose = "test"
   }

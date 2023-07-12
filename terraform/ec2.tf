@@ -1,7 +1,7 @@
 resource "aws_instance" "ec2_jenkins" {
   ami                    = "ami-0aea56f3589631913"
   instance_type          = "t2.medium"
-  subnet_id              = aws_subnet.public-eu-central-1a
+  subnet_id              = aws_subnet.public-eu-central-1a.id
   vpc_security_group_ids = [aws_security_group.ec2_jenkins.id]
   key_name               = aws_key_pair.key_pair.key_name
 
